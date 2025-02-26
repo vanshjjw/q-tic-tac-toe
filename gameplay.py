@@ -125,6 +125,8 @@ def playGame():
 
     except SystemExit:
         print("\n...\n\nGAME OVER\n\n...\n\nRerun gameplay to play again!")
+    except Exception as e:
+        print(f"\nAn error occurred: {e}\n\nExiting game...\n\n")
 
 
 
@@ -138,13 +140,13 @@ def makeMeasurements(MeasureAlong, myBoard):
     removeEntangles(myBoard, MeasureAlong)
 
 
-def removeEntangles(A, MeasureAlong):
+def removeEntangles(myBoard, MeasureAlong):
     for m in MeasureAlong:
         for i in range(0, 3):
             for j in range(0, 3):
-                if A[2][i][j] == (70 + m) or A[2][i][j] == (80 + m):
-                    A[0][i][j] = -1
-                    A[2][i][j] = -1
+                if myBoard[2][i][j] == (70 + m) or myBoard[2][i][j] == (80 + m):
+                    myBoard[0][i][j] = -1
+                    myBoard[2][i][j] = -1
 
 
 

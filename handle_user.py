@@ -1,7 +1,4 @@
-import backend
-import numpy as np
 import handle_display
-
 
 def FindAllOccupiedIndices(myBoard):
     indices = []

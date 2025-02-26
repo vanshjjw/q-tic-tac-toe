@@ -1,7 +1,10 @@
 import matplotlib.pyplot as plt
 from PIL import Image
 
-def display_board(myBoard):
+def display_board(myBoard, holder=None):
+    plt.close()
+    plt.figure(figsize=(5, 5))
+
     for imageNo in range(0, 9):
 
         if myBoard[0][imageNo // 3][imageNo % 3] != -1 and myBoard[2][imageNo // 3][imageNo % 3] == -1:
@@ -53,4 +56,4 @@ def display_board(myBoard):
             plt.axis('off')
 
     plt.subplots_adjust(left=0.1, bottom=0.1, right=0.9, top=0.9, wspace=0.1, hspace=0.1)
-    plt.show()
+    plt.show(block=False)
