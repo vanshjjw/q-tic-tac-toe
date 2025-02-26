@@ -21,11 +21,17 @@ As it stands right now, this a game of odds, and in order to make it strategic, 
  
 ## How To Play:
 
-Download the Jupyter Notebook File. Run all the cells Except the Top One! Run the Top Cell last, and Enjoy!
 
-#Run this once at the beggining only on your console:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies using pip:
+    ```sh
+    pip install .
+    ```
+4. Run the game by executing the `gameplay.py` script:
+    ```sh
+    python gameplay.py
+    ```
+5. Follow the on-screen instructions to play the game.
 
-
-pip install opencv-python 
-
-**EDIT:** Version 1 plays on the console. Version 2 has updated graphics for the board.
+**Note:** The game currently in the console with a plot of the grid for assistance.
