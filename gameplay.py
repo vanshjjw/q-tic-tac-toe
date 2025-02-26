@@ -125,8 +125,8 @@ def playGame():
 
     except SystemExit:
         print("\n...\n\nGAME OVER\n\n...\n\nRerun gameplay to play again!")
-    except Exception as e:
-        print(f"\nAn error occurred: {e}\n\nExiting game...\n\n")
+    except ValueError as e:
+        print(f"\nInvalid Input...\n\nExiting game...\n\n")
 
 
 
