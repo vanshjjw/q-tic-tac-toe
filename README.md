@@ -26,7 +26,7 @@ As it stands right now, this a game of odds, and in order to make it strategic, 
 2. Navigate to the project directory.
 3. Install the required dependencies using pip:
     ```sh
-    pip install .
+    pip install -r requirements.txt
     ```
 4. Run the game by executing the `gameplay.py` script:
     ```sh
