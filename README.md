@@ -30,7 +30,7 @@ As it stands right now, this a game of odds, and in order to make it strategic, 
     ```
 4. Run the game by executing the `gameplay.py` script:
     ```sh
-    python gameplay.py
+    python play.py
     ```
 5. Follow the on-screen instructions to play the game.
 
